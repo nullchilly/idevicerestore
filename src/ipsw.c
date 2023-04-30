@@ -134,7 +134,7 @@ int ipsw_print_info(const char* path)
 	}
 
 	plist_t manifest = NULL;
-	plist_from_memory(plist_buf, plist_len, &manifest, 1);
+	plist_from_memory(plist_buf, plist_len, &manifest, PLIST_FORMAT_XML);
 	free(plist_buf);
 
 	plist_t val;
